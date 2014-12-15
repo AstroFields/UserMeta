@@ -2,11 +2,11 @@
 
 namespace WCM\AstroFields\UserMeta\Commands;
 
-use WCM\AstroFields\Core\Commands\ContextAwareInterface;
+use WCM\AstroFields\Core;
 
-class DeleteMeta
-	implements \SplObserver,
-			   ContextAwareInterface
+class DeleteMeta implements
+	\SplObserver,
+	Core\Commands\ContextAwareInterface
 {
 	/** @type string */
 	private $context = 'profile_update';

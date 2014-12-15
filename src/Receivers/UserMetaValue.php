@@ -2,14 +2,12 @@
 
 namespace WCM\AstroFields\UserMeta\Receivers;
 
-use WCM\AstroFields\Core\Receivers\FieldInterface;
-use WCM\AstroFields\Core\Receivers\AttributeAwareInterface;
-use WCM\AstroFields\Core\Receivers\OptionAwareInterface;
+use WCM\AstroFields\Core;
 
-class UserMetaValue
-	implements FieldInterface,
-			   AttributeAwareInterface,
-			   OptionAwareInterface
+class UserMetaValue implements
+	Core\Receivers\EntityProviderInterface,
+	Core\Receivers\AttributeAwareInterface,
+	Core\Receivers\OptionAwareInterface
 {
 	/** @type Array */
 	private $data;

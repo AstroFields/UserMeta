@@ -2,17 +2,12 @@
 
 namespace WCM\AstroFields\UserMeta\Templates;
 
-use WCM\AstroFields\Core\Templates\TemplateInterface,
-	WCM\AstroFields\Core\Templates\PrintableInterface,
-	WCM\AstroFields\Core\Receivers\FieldInterface,
-	WCM\AstroFields\Core\Receivers\AttributeAwareInterface;
+use WCM\AstroFields\Core;
+use WCM\AstroFields\Standards;
 
-use WCM\AstroFields\Standards\Templates\InputFieldTmpl as BaseTmpl;
-
-class InputFieldTmpl
-	extends BaseTmpl
-	implements TemplateInterface,
-			   PrintableInterface
+class InputFieldTmpl extends Standards\Templates\InputFieldTmpl implements
+	Core\Templates\TemplateInterface,
+	Core\Templates\PrintableInterface
 {
 	/**
 	 * @return string
